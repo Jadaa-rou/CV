@@ -1,25 +1,22 @@
 # Jadaa · 艺术家个人简历网站
 
-本提交在仓库根目录添加了一个静态的艺术家个人简历交互网站。
+一个以编辑型排版呈现的艺术家交互简历站点，包含首页简介、艺术经历、作品画廊、展览与获奖记录、联系方式五个部分。
 
-包含文件：
-- index.html — 站点主页面（首页 / 生平 / 画廊 / 展览 / 联系）
-- styles.css — 样式表，响应式布局与配色
-- script.js — 简单交互：导航切换、平滑滚动、画廊模态
-- assets/ — 三个占位 SVG 作品图
+## 文件结构
 
-部署与本地调试：
-1. 在本地克隆仓库并切换到 main 分支：
-   git clone https://github.com/Jadaa-rou/CV.git
-   git checkout main
-2. 直接打开 `index.html` 即可预览（推荐使用本地静态服务器）：
-   - Python 3: `python -m http.server 8000` 然后打开 http://localhost:8000
-3. 若要使用 GitHub Pages：在仓库设置里启用 GitHub Pages，选择 `main` 分支的根目录即可。
+- `index.html`：页面内容、导航、作品元数据和联系表单
+- `styles.css`：响应式视觉系统、动效与移动端布局
+- `script.js`：移动导航、滚动显现、章节高亮、滚动进度、作品模态、键盘控制和表单反馈
+- `assets/`：三张作品预览 SVG，可替换为真实作品图片
 
-配色与字体：使用暖色系为主，结合少量蓝紫作为点缀，字体使用 Google Fonts 的 Playfair Display（标题）和 Inter（正文字体）。
+## 本地预览
 
-如需我：
-- 替换占位图片为真实作品（可批量上传到 assets/），我可以帮你更新缩略图与元数据；
-- 添加多语言支持、打印式简历（PDF 导出）、或将联系表单接入后端邮件服务。
+在项目根目录运行：
 
-已将文件提交到 `main` 分支。
+```bash
+python -m http.server 8000
+```
+
+然后打开 <http://localhost:8000>。项目无构建依赖，也可以直接打开 `index.html` 预览。
+
+页面使用 Google Fonts 的 Fraunces、DM Sans 和 DM Mono；部署到离线环境时，可将字体改为本地文件或系统字体。
