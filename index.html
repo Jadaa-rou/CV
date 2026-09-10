@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>艺术家 · 个人简历 — Jadaa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#">Jadaa · 艺术家</a>
+      <button class="nav-toggle" aria-label="切换导航">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#about">生平</a></li>
+        <li><a href="#gallery">作品</a></li>
+        <li><a href="#exhibitions">展览 / 获奖</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </nav>
+    <section id="home" class="hero">
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <h1>Jadaa</h1>
+          <p class="tagline">以暖色与微光描绘记忆的片段 · 画家 / 装置艺术家</p>
+          <p class="intro">欢迎来到我的在线作品集。这里收录了我近年来的作品、展览记录与艺术历程，带来沉浸式的视觉浏览体验。</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#gallery">查看作品</a>
+            <a class="btn ghost" href="#about">了解我</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/artwork1.svg" alt="代表作品预览" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section container about">
+      <h2>生平与艺术经历</h2>
+      <div class="about-grid">
+        <article class="bio">
+          <p>出生于...，自幼热爱绘画，擅长以温暖的色调与细腻的笔触表现记忆感与时间性。创作跨越油画、媒介装置与影像，常以光与织物为媒材进行实验。</p>
+        </article>
+        <aside class="timeline">
+          <h3>时间线</h3>
+          <ul>
+            <li><strong>2024</strong> — 个人展「余温」· 城市美术馆</li>
+            <li><strong>2022</strong> — 获得 XX 艺术奖</li>
+            <li><strong>2019</strong> — 联展「光与织物」· 文化空间</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="gallery" class="section container gallery">
+      <h2>作品画廊</h2>
+      <p class="muted">点击查看大图 — 支持键盘方向切换与触摸滑动。</p>
+      <div class="gallery-grid">
+        <button class="gallery-item" data-full="assets/artwork1.svg" aria-label="作品 1">
+          <img src="assets/artwork1.svg" alt="作品 1" loading="lazy">
+        </button>
+        <button class="gallery-item" data-full="assets/artwork2.svg" aria-label="作品 2">
+          <img src="assets/artwork2.svg" alt="作品 2" loading="lazy">
+        </button>
+        <button class="gallery-item" data-full="assets/artwork3.svg" aria-label="作品 3">
+          <img src="assets/artwork3.svg" alt="作品 3" loading="lazy">
+        </button>
+      </div>
+    </section>
+
+    <section id="exhibitions" class="section container exhibitions">
+      <h2>展览与获奖</h2>
+      <div class="cards">
+        <div class="card">
+          <h4>个展 — 余温</h4>
+          <p>城市美术馆 · 2024</p>
+        </div>
+        <div class="card">
+          <h4>XX 艺术奖</h4>
+          <p>评委提名/获奖 · 2022</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact">
+      <h2>联系方式</h2>
+      <p>欢迎合作与邀请展览，或商务/媒体联络。</p>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Email</strong>: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+          <p><strong>Instagram</strong>: <a href="#">@jadaa_art</a></p>
+        </div>
+        <form class="contact-form" action="mailto:youremail@example.com" method="post" enctype="text/plain">
+          <label>姓名<input type="text" name="name" placeholder="你的名字"></label>
+          <label>邮件<input type="email" name="email" placeholder="你的邮箱"></label>
+          <label>留言<textarea name="message" rows="4" placeholder="写点什么..."></textarea></label>
+          <button class="btn primary" type="submit">发送</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Jadaa — All rights reserved · Designed with warm tones and a touch of blue-purple.</p>
+    </div>
+  </footer>
+
+  <!-- Gallery Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <button class="modal-close" aria-label="关闭">✕</button>
+    <div class="modal-body">
+      <img id="modal-img" src="" alt="">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
